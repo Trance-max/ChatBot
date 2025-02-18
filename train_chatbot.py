@@ -1,10 +1,13 @@
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # Force TensorFlow to use CPU only
+
 import json
 import numpy as np
 import tensorflow as tf
 import nltk
 from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.keras.layers import Dense, Dropout # type: ignore
 
 # Download necessary NLTK data
 nltk.download("punkt")
