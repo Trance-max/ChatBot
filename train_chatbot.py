@@ -3,8 +3,8 @@ import numpy as np
 import tensorflow as tf
 import nltk
 from nltk.stem import WordNetLemmatizer
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.keras.models import Sequential # type: ignore
+from tensorflow.keras.layers import Dense, Dropout # type: ignore
 
 # Ensure necessary NLTK packages are downloaded
 nltk.download("punkt")
